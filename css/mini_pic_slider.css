@@ -1,0 +1,71 @@
+.min_pic_slider
+{
+  background-color: red;
+  height: 300px;
+  width: 400px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.slider_mini
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  height: 100%;
+  width: 1200px;
+  background-color: blue;
+  
+  animation: anim 20s infinite;
+}
+
+#photo1
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 400px;
+  background-image: url(https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png);
+  background-size: cover;
+}
+
+#photo2
+{
+  position: absolute;
+  top: 0;
+  left: 400px;
+  height: 100%;
+  width: 400px;
+  background-image: url(https://media.istockphoto.com/photos/colored-powder-explosion-on-black-background-picture-id1057506940?k=6&m=1057506940&s=612x612&w=0&h=C11yA-ESqeuCX63QkRpPyWmAMXJJvZw0niQluGnATlI=);
+  background-size: cover;
+}
+
+#photo3
+{
+  position: absolute;
+  top: 0;
+  left: 800px;
+  height: 100%;
+  width: 400px;
+  background-image: url(https://user.oc-static.com/files/6001_7000/6410.jpg);
+  background-size: cover;
+}
+
+@keyframes anim
+{
+  0%
+  {
+    left: 0%;
+  }
+  50%
+  {
+    left: -200%;
+  }
+  100%
+  {
+    left: 0%;
+  }
+}
